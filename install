@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 /usr/bin/env git clone https://github.com/No5stranger/cjp-vim.git $HOME/.vim
+if [ -f $HOME/.vimrc ]
+then
+    mv $HOME/.vimrc $HOME/.vimrc.bak
+fi
 ln -s $HOME/.vim/vimrc $HOME/.vimrc
-/usr/bin/env git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
-vim +BundleInstall +qall
+/usr/bin/env git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
