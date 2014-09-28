@@ -71,6 +71,12 @@ let g:gitgutter_sign_modified = '~~'
 let g:gitgutter_sign_removed = '--'
 let g:gitgutter_sign_modified_removed = '~-'
 
+" git tool
+Plugin 'tpope/vim-fugitive'
+
+" gist tool
+Plugin 'mattn/gist-vim'
+
 " find file tool
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 'rc'
@@ -93,6 +99,23 @@ Plugin 'majutsushi/tagbar'
 let g:tagbar_autoclose = 1
 let g:tagbar_sort = 0
 
+" code style check
+Plugin 'scrooloose/syntastic'
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump=1
+let g:syntastic_php_checkers=['php', 'phpcs']
+let g:syntastic_python_checkers=['flake8']
+
+" python code style
+Plugin 'hynek/vim-python-pep8-indent'
+
+" note tool
+Plugin 'scrooloose/nerdcommenter'
+
+" auto index
+Plugin 'godlygeek/tabular'
+nnoremap <silent> <leader>t :Tabularize /
+
 call vundle#end()
 filetype plugin indent on
 
@@ -101,7 +124,7 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set showmode
 set number
-set showtabline=1
+set showtabline=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
