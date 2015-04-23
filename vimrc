@@ -153,6 +153,11 @@ filetype plugin indent on
 set showmode
 set number
 set showtabline=2
+set autochdir
+set softtabstop=4
+set completeopt-=preview
+set wildmenu
+set wildmode=list:longest,full
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
