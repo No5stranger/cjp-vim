@@ -150,6 +150,7 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Personal
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set shell=bash
 set showmode
 set number
 set showtabline=2
