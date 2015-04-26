@@ -145,7 +145,7 @@ Plugin 'godlygeek/tabular'
 nnoremap <silent> <leader>t :Tabularize /
 
 " go tools
-Plugin 'faith/vim-go'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
