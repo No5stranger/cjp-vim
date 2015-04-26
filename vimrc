@@ -144,6 +144,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'godlygeek/tabular'
 nnoremap <silent> <leader>t :Tabularize /
 
+" go tools
+Plugin 'faith/vim-go'
+
 call vundle#end()
 filetype plugin indent on
 
