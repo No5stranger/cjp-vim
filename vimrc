@@ -54,8 +54,8 @@ Plugin 'bling/vim-airline'
   endif
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_left_alt_sep='|'
-let g:airline_right_alt_sep='|'
+let g:airline_left_alt_sep=''
+let g:airline_right_alt_sep=''
 let g:airline_detect_modified=1
 let g:airline_symbols.linenr = '␊'
 let g:airline_symbols.linenr = '␤'
@@ -65,8 +65,8 @@ let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_theme='tomorrow'
-let g:airline_extensions = ['branch', 'tabline']
+let g:airline_theme='understated'
+let g:airline_extensions = ['branch']
 let g:airline_mode_map = {
   \ '__' : '-',
   \ 'n'  : 'N',
@@ -137,6 +137,14 @@ let g:syntastic_python_checkers=['flake8']
 " python code style
 Plugin 'hynek/vim-python-pep8-indent'
 
+" Python mode
+Bundle 'klen/python-mode'
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+let g:pymode_folding = 0
+
 " note tool
 Plugin 'scrooloose/nerdcommenter'
 
@@ -149,6 +157,8 @@ Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
+autocmd FileType python set cc=80
+autocmd FileType php set cc=120
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Personal
