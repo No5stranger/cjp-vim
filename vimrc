@@ -126,6 +126,10 @@ map <leader>n :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 Plugin 'majutsushi/tagbar'
 let g:tagbar_autoclose = 1
 let g:tagbar_sort = 0
+nmap <leader>a :TagbarToggle<CR>
+
+" supertab
+Plugin 'ervandew/supertab'
 
 " code style check
 Plugin 'scrooloose/syntastic'
@@ -133,6 +137,9 @@ let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=1
 let g:syntastic_php_checkers=['php', 'phpcs']
 let g:syntastic_python_checkers=['flake8']
+
+" thrift.vim
+Plugin 'solarnz/thrift.vim'
 
 " python code style
 Plugin 'hynek/vim-python-pep8-indent'
